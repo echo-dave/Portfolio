@@ -1,0 +1,12 @@
+body section > div {
+    background: rgb(48, 48, 48);
+    color:#fff;
+    width:80vw;
+    max-width: 54em;
+    margin:0 auto 1.5em;
+    box-sizing: border-box;
+    padding: 1.5em;
+    border-radius: 1em;
+}
+
+#about {margin-top:11em;}

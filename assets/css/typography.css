@@ -7,10 +7,17 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: .875rem;
    }
-   
+
+ .mono {
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: .125em;
+ }
+
    h1, h2, h3, h4, h5, h6 {
     font-weight:bold;
    }
+
+   h1,h2 {padding-bottom:.3em; color:hsla(202, 92%, 66%, 0.842);font-weight: 700;}
    
    header h1 {
        font-size: 2.6em;
@@ -40,6 +47,13 @@ body {
     font-size: 1.25em;
    }
    
+   .medium {font-weight: 500;}
+
+   .light {font-weight: 300;}
+
+.blue {color:hsla(202, 92%, 66%, 0.842);}
+.orange {color:orange;}
+
    .large {
        font-size: 150%;
    }
@@ -71,6 +85,8 @@ body {
    }
 
    p {
-       line-height: 1.3;
+       line-height: 1.4em;
        margin-bottom: 1.5em;
+       margin-left:1.5em;
+       font-weight: 300;
    }

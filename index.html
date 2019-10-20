@@ -9,18 +9,16 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
     <link rel="stylesheet" href="assets/css/reset.css">
-    <!--<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Montserrat&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:500,700|Montserrat:100,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/typography.css">
     <link rel="stylesheet" href="assets/css/titleAni.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
     <title>Dave May| Full Stack Dev</title>
 </head>
 
 <body>
-
-    <head>
+    <header>
         <div class="animatedLoader">
             <div class="svgWrap">
                 <svg class="animationCanvas">
@@ -43,16 +41,15 @@
                 <span class="describeDave">Full Stack Dev</span>
             </div>
         </div>
-    </head>
+    </header>
 
     <section id="about">
-        <div class="wrapper">
+        <div class="wrapper clearfix">
             <div class="portrait"></div>
             <!-- <img src="/assets/img/portrait-001-3.jpg" alt="portrait of Dave Mat"> -->
             <div class="about">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, minus aliquam eligendi
-                    accusamus iure voluptate iste aspernatur earum deserunt corporis maxime perspiciatis magnam suscipit
-                    ab, eos cumque ea nobis nihil?</p>
+                <h1 class="mono">Dave May</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, minus aliquam eligendi accusamus iure voluptate iste aspernatur earum deserunt corporis maxime perspiciatis magnam suscipit ab, eos cumque ea nobis nihil?</p>
             </div>
 
 
@@ -60,69 +57,15 @@
     </section>
 
     <section id="portfolio">
-
+        <div>
+            <div>
+                <h2 class="orange">Hello World</h3>
+            </div>
+        </div>
     </section>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            let aL;
-                let aniLo;
-                let marginWidth;
-                let strLength; //for concatonating
-           
-            //Portrait resize
-            $(".portrait").css("height", $(".portrait").css("width"));
-            $(window).on("resize", function () {
-                $(".portrait").css("height", $(".portrait").css("width"));
+    <script src="assets/js/script.js" type="text/javascript"></script>
 
-                //header resize based 756px
-            
-
-                //working block for .animationLoader
-                aL = $(".animatedLoader").css("width");
-                aL = aL.substring(0, aL.length - 2);
-                aniLo = parseInt(aL) / 756; //.70 to calculate off 43.4 base margin
-                marginWidth = aniLo * 43.4
-                // let marginWidth = aniLo * parseInt($(".svgWrap").css("margin-left").substring(0,aL.length - 2));
-                $(".svgWrap").css("margin-left", marginWidth + "px");
-
-                // canvas
-                aL = $(".animatedLoader").css("width");
-                aL = aL.substring(0, aL.length - 2); // trim px
-                aniLo = parseInt(aL) / 756; //width of loader / max width for %change to apply
-                //let marginWidth = aniLo * 43.4
-                marginWidth = aniLo * parseInt($(".animationCanvas").css("left").substring(0, this.length - 2));
-                $(".animationCanvas").css("left", marginWidth + "px");
-
-                //text animation textAnimation
-                aL = $(".animatedLoader").css("width");
-                aL = aL.substring(0, aL.length - 2); // trim px
-                aniLo = parseInt(aL) / 756; //width of loader / max width for %change to apply
-                //let marginWidth = aniLo * 43.4
-                marginWidth = aniLo * parseInt($(".textAnimation").css("left").substring(0, this.length - 2));
-                $(".textAnimation").css("left", marginWidth + "px");
-                
-                
-                /* aL = $(".animatedLoader").css("width");
-                aL = aL.substring(0, aL.length - 2); // trim px
-                aniLo = parseInt(aL) / 756; //width of loader / max width for %change to apply
-                //let marginWidth = aniLo * 43.4
-                strLength = $(".textAnimation").css("left").length;
-                marginWidth = aniLo * parseInt($(".textAnimation").css("left").substring(0, strLength - 2));
-                $(".textAnimation").css("left", marginWidth + "px"); */
-
-                /* function leftRescale(className, attrName) {
-                   let aL = $(".animatedLoader").css("width");
-                   aL = aL.substring(0, aL.length - 2);
-                   let aniLo = parseInt(aL) / 756; // get working percentage
-                   let marginWidth = aniLo * parseInt($(className).css(attrName).substr(0,this.length - 2));
-                  // $("className").css("attrName", marginWidth + "px");
-               }
-               leftRescale ('".svgWrap"','"margin-left"');
-*/
-            });
-
-        });
     </script>
 </body>
 

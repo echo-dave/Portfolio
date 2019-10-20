@@ -1,3 +1,5 @@
+/* body {background:url("../img/bgpatternlighter.png")repeat;} */
+
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -21,12 +23,13 @@ body section > div > div {
     padding:0 0em;
 }
 
-section {width:80vw; margin:0 auto;}
-#about {margin-top:11em;max-width: 54em}
+section {width:80vw; margin:0 auto;max-width: 54em}
+#about {margin-top:11em;}
 .about {
     /* max-width: 36.5em; */
     min-height: 10em;
-width:75%;
+    width:77%;
+    height: 100%;
     margin-right:0;
     display: inline-block;
     float: right;
@@ -45,9 +48,10 @@ width:75%;
 
 
 .clearfix:after {
-    content: " ";
     visibility: hidden;
     display: block;
-    height: 0;
+    font-size: 0;
+    content: " ";
     clear: both;
+    height: 0;
  }

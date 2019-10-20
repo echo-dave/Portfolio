@@ -69,9 +69,13 @@ body {font-size: .875rem; background:#eee; color: rgb(31, 31, 31);}
         100% {transform: translateY(5.0em);}
     }
     .textAnimation {
-        position: fixed;
+       position: absolute;
+       top:0;
+       left:1.2em;
+       
+       /*  position: fixed;
         top:3rem;
-        left:4rem;
+        left:4rem; */
         font-size: 1.5em;
         font-family: monospace;
     }

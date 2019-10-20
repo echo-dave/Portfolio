@@ -1,7 +1,14 @@
-body section > div {
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: none;
+ }
+body section > div > div {
     background: rgb(48, 48, 48);
     color:#fff;
-    width:80vw;
+    /* width:80vw; */
     max-width: 54em;
     margin:0 auto 1.5em;
     box-sizing: border-box;
@@ -9,4 +16,38 @@ body section > div {
     border-radius: 1em;
 }
 
-#about {margin-top:11em;}
+.wrapper{
+    margin: 0 auto;
+    padding:0 0em;
+}
+
+section {width:80vw; margin:0 auto;}
+#about {margin-top:11em;max-width: 54em}
+.about {
+    /* max-width: 36.5em; */
+    min-height: 10em;
+width:75%;
+    margin-right:0;
+    display: inline-block;
+    float: right;
+    position: relative;
+    top:0;
+    right:0;
+}
+.portrait {
+    width:20%;
+    overflow: hidden;
+    background: url(../img/portrait-001-3.jpg) center/108% no-repeat;
+    float:left;
+}
+
+
+
+
+.clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+ }

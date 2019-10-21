@@ -6,7 +6,10 @@ $(document).ready(function () {
     $(".imgBreak").css("height", parseInt($(".imgBreak").css("width").substring(0, $(".imgBreak").css("width").length - 2) * .19 + "px"));
 
     //listen for loader animation to end and set position absolute
-    $(".animatedLoader").one('animationend webkitAnimationEnd oAnimationEnd', function () {
+    $(".animatedLoader").on("animationend webkitAnimationEnd oAnimationEnd", function (event) {
+        console.log(event.originalEvent.animationName);
+        if (event.originalEvent.animationName ==="slidetop") {
+
         $(".animatedLoader").css("position", "absolute");
 
         //change from dark to light
@@ -26,9 +29,11 @@ $(document).ready(function () {
                 $("#style").prop("href", "assets/css/style.css");
                 setLightBtn();
             });
+        
         }
-
         setLightBtn();
+
+    }
         
     });
 

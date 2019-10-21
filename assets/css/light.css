@@ -52,7 +52,7 @@ section, .imgBreak{width:80vw; margin:0 auto;max-width: 54em}
 
 #styleChange {
     position: absolute;
-    bottom: 0em;
+    bottom: -1em;
     right: 0em;
   
 }

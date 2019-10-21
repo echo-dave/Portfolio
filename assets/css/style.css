@@ -7,7 +7,7 @@
     align-items: flex-start;
     background: none;
  }
-body section > div > div {
+body section > div > div, .imgBreak{
     background: rgb(48, 48, 48);
     color:#fff;
     /* width:80vw; */
@@ -23,7 +23,7 @@ body section > div > div {
     padding:0 0em;
 }
 
-section {width:80vw; margin:0 auto;max-width: 54em}
+section, .imgBreak{width:80vw; margin:0 auto;max-width: 54em}
 #about {margin-top:11em;}
 .about {
     /* max-width: 36.5em; */
@@ -44,6 +44,11 @@ section {width:80vw; margin:0 auto;max-width: 54em}
     float:left;
 }
 
+.imgBreak {
+    background: url(../img/atlFarm.jpg) no-repeat center;
+    min-height:100px;
+    margin-bottom: 1.5em;
+}
 
 
 

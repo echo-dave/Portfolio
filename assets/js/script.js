@@ -1,8 +1,10 @@
 $(document).ready(function () {
-   // set minimum height of about text to portrait img
-   $("div.about").css("min-height", $(".portrait").css("height"));
-   
-   
+    // set minimum height of about text to portrait img
+    $("div.about").css("min-height", $(".portrait").css("height"));
+
+    //set .imgBreak hight as a percentage of width. file 19% of width
+    $(".imgBreak").css("height", parseInt($(".imgBreak").css("width").substring(0, $(".imgBreak").css("width").length - 2) * .19 + "px"));
+
     let aL;
     let aniLo;
     let marginWidth;
@@ -10,7 +12,9 @@ $(document).ready(function () {
 
     //Portrait resize
     $(".portrait").css("height", $(".portrait").css("width"));
-    $(window).on("resize", function () {
+    // $(window).on("resize", function () {
+
+     function sizingFunction() {
         $(".portrait").css("height", $(".portrait").css("width"));
 
         //header resize based 756px
@@ -51,5 +55,11 @@ $(document).ready(function () {
        }
        leftRescale ('".svgWrap"','"margin-left"');
 */
+    };
+
+    sizingFunction();
+    
+    $(window).on("resize", function() {
+        sizingFunction();
     });
 });

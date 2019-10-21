@@ -5,6 +5,11 @@ $(document).ready(function () {
     //set .imgBreak hight as a percentage of width. file 19% of width
     $(".imgBreak").css("height", parseInt($(".imgBreak").css("width").substring(0, $(".imgBreak").css("width").length - 2) * .19 + "px"));
 
+    //listen for loader animation to end and set position absolute
+    $(".animatedLoader").on("animationend", function() {
+        $(".animatedLoader").css("position","absolute");
+    });
+
     let aL;
     let aniLo;
     let marginWidth;
@@ -58,7 +63,7 @@ $(document).ready(function () {
     };
 
     sizingFunction();
-    
+
     $(window).on("resize", function() {
         sizingFunction();
     });

@@ -1,6 +1,6 @@
 @media only screen and (max-width:550px) {
 
-    section, .imgBreak {
+    section, .imgBreak, .animatedLoader {
         width:95vw;
     }
 

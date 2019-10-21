@@ -16,7 +16,8 @@ $(document).ready(function () {
     /*     let currentSheet = $("#style").prop("href");
         if (currentSheet.indexOf("style.css") >= 0) { */
         function setLightBtn() {
-            $("#styleChange").html('<h6><a href="#" title="Have a go at the light theme">go light</a><h6>');
+            // $("#styleChange").html('<h6><a href="#" title="Have a go at the light theme">go light</a><h6>');
+            $("#styleChange").html('<img alt="go light" src="assets/img/light.svg" height="21px" width="21px" />');
             $("#styleChange").on("click", function () {
             $("#style").prop("href", "assets/css/light.css");
                 setDarkBtn();
@@ -24,7 +25,8 @@ $(document).ready(function () {
 
         }
         function setDarkBtn(){
-            $("#styleChange").html('<h6><a href="#" title="Return to the dark">go dark</a><h6>');
+            // $("#styleChange").html('<h6><a href="#" title="Return to the dark">go dark</a><h6>');
+            $("#styleChange").html('<img alt="go light" src="assets/img/dark.svg" height="21px" width="21px" />');
             $("#styleChange").on("click", function () {
                 $("#style").prop("href", "assets/css/style.css");
                 setLightBtn();

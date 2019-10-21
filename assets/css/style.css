@@ -50,13 +50,19 @@ section, .imgBreak{width:80vw; margin:0 auto;max-width: 54em}
     margin-bottom: 1.5em;
 }
 
+
 #styleChange {
     position: absolute;
     bottom: -1em;
     right: 0em;
 }
+
 #styleChange a:visited, #styleChange a:active, #styleChange a {
     color:#cacaca;
+}
+
+#styleChange :hover {
+    cursor: pointer;
 }
 
 

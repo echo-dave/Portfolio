@@ -61,6 +61,10 @@ section, .imgBreak{width:80vw; margin:0 auto;max-width: 54em}
     color:#cacaca;
 }
 
+#styleChange :hover {
+    cursor: pointer;
+}
+
 .clearfix:after {
     visibility: hidden;
     display: block;

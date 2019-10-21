@@ -6,9 +6,23 @@ $(document).ready(function () {
     $(".imgBreak").css("height", parseInt($(".imgBreak").css("width").substring(0, $(".imgBreak").css("width").length - 2) * .19 + "px"));
 
     //listen for loader animation to end and set position absolute
-    $(".animatedLoader").on("animationend", function() {
-        $(".animatedLoader").css("position","absolute");
+    $(".animatedLoader").on("animationend", function () {
+        $(".animatedLoader").css("position", "absolute");
+
+        //change from dark to light
+        let currentSheet = $("#style").prop("href");
+        if (currentSheet.indexOf("style.css") >= 0) {
+            $("#styleChange").html('<h3><a href="#">go light</a><h3>');
+            $("#styleChange").on("click", function () {
+                $("#style").prop("href", "assets/css/light.css");
+            });
+
+        };
+
     });
+
+
+
 
     let aL;
     let aniLo;
@@ -19,7 +33,7 @@ $(document).ready(function () {
     $(".portrait").css("height", $(".portrait").css("width"));
     // $(window).on("resize", function () {
 
-     function sizingFunction() {
+    function sizingFunction() {
         $(".portrait").css("height", $(".portrait").css("width"));
 
         //header resize based 756px
@@ -64,7 +78,7 @@ $(document).ready(function () {
 
     sizingFunction();
 
-    $(window).on("resize", function() {
+    $(window).on("resize", function () {
         sizingFunction();
     });
 });

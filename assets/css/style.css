@@ -52,10 +52,12 @@ section, .imgBreak{width:80vw; margin:0 auto;max-width: 54em}
 
 #styleChange {
     position: absolute;
-    bottom: -1em;
-    right: -3em;
+    bottom: 0em;
+    right: 0em;
 }
-
+#styleChange a:visited, #styleChange a:active, #styleChange a {
+    color:#cacaca;
+}
 
 
 .clearfix:after {

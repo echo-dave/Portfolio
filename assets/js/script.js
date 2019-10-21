@@ -6,19 +6,30 @@ $(document).ready(function () {
     $(".imgBreak").css("height", parseInt($(".imgBreak").css("width").substring(0, $(".imgBreak").css("width").length - 2) * .19 + "px"));
 
     //listen for loader animation to end and set position absolute
-    $(".animatedLoader").on("animationend", function () {
+    $(".animatedLoader").one('animationend webkitAnimationEnd oAnimationEnd', function () {
         $(".animatedLoader").css("position", "absolute");
 
         //change from dark to light
-        let currentSheet = $("#style").prop("href");
-        if (currentSheet.indexOf("style.css") >= 0) {
-            $("#styleChange").html('<h3><a href="#">go light</a><h3>');
+    /*     let currentSheet = $("#style").prop("href");
+        if (currentSheet.indexOf("style.css") >= 0) { */
+        function setLightBtn() {
+            $("#styleChange").html('<h6><a href="#" title="Have a go at the light theme">go light</a><h6>');
             $("#styleChange").on("click", function () {
-                $("#style").prop("href", "assets/css/light.css");
+            $("#style").prop("href", "assets/css/light.css");
+                setDarkBtn();
             });
 
-        };
+        }
+        function setDarkBtn(){
+            $("#styleChange").html('<h6><a href="#" title="Return to the dark">go dark</a><h6>');
+            $("#styleChange").on("click", function () {
+                $("#style").prop("href", "assets/css/style.css");
+                setLightBtn();
+            });
+        }
 
+        setLightBtn();
+        
     });
 
 
@@ -55,25 +66,7 @@ $(document).ready(function () {
         marginWidth = aniLo * parseInt($(".animationCanvas").css("left").substring(0, this.length - 2));
         $(".animationCanvas").css("left", marginWidth + "px");
 
-        //text animation textAnimation
 
-        /* aL = $(".animatedLoader").css("width");
-        aL = aL.substring(0, aL.length - 2); // trim px
-        aniLo = parseInt(aL) / 756; //width of loader / max width for %change to apply
-        //let marginWidth = aniLo * 43.4
-        strLength = $(".textAnimation").css("left").length;
-        marginWidth = aniLo * parseInt($(".textAnimation").css("left").substring(0, strLength - 2));
-        $(".textAnimation").css("left", marginWidth + "px"); */
-
-        /* function leftRescale(className, attrName) {
-           let aL = $(".animatedLoader").css("width");
-           aL = aL.substring(0, aL.length - 2);
-           let aniLo = parseInt(aL) / 756; // get working percentage
-           let marginWidth = aniLo * parseInt($(className).css(attrName).substr(0,this.length - 2));
-          // $("className").css("attrName", marginWidth + "px");
-       }
-       leftRescale ('".svgWrap"','"margin-left"');
-*/
     };
 
     sizingFunction();

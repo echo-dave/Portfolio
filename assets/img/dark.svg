@@ -1,45 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g transform="matrix(1,0,0,1,-58.6973,8.88178e-16)">
-        <g id="Artboard1" transform="matrix(1.78571,0,0,1.78571,58.6973,-8.88178e-16)">
+<svg width="100%" height="100%" viewBox="0 0 51 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-58,0)">
+        <g id="dark" transform="matrix(1.78571,0,0,1.78571,58.6973,-8.88178e-16)">
             <rect x="0" y="0" width="28" height="28" style="fill:none;"/>
-            <clipPath id="_clip1">
-                <rect x="0" y="0" width="28" height="28"/>
-            </clipPath>
-            <g clip-path="url(#_clip1)">
-                <g transform="matrix(0.84,0,0,0.84,2.24,6.0118)">
-                    <g transform="matrix(0.666667,0,0,0.666667,0,0)">
-                        <circle cx="21" cy="9.424" r="11.576" style="fill:rgb(178,178,178);"/>
-                    </g>
-                    <g id="dark" transform="matrix(0.666667,0,0,0.666667,0,0)">
-                        <circle cx="21" cy="9.424" r="11.576" style="fill:rgb(97,97,97);"/>
-                    </g>
-                    <g transform="matrix(0.666667,0,0,0.666667,0.660879,0)">
-                        <path d="M26.043,18.622L13.974,18.622L16.303,30.682L23.398,30.682L26.043,18.622Z" style="fill:rgb(117,117,117);"/>
-                    </g>
+            <g transform="matrix(0.84,0,0,0.84,2.24,6.0118)">
+                <g transform="matrix(0.666667,0,0,0.666667,0,0)">
+                    <circle cx="21" cy="9.424" r="11.576" style="fill:rgb(178,178,178);"/>
                 </g>
-                <g id="dark1" serif:id="dark">
-                    <g transform="matrix(0.56,0,0,0.56,0,0)">
-                        <path d="M37.839,15.4L84.679,-0.37C84.845,-0.413 84.736,-0.434 85.121,-0.415C86.048,-0.228 86.253,1.13 85.317,1.525L38.268,17.366C38.173,16.693 38.028,16.037 37.839,15.4Z" style="fill:rgb(191,191,191);"/>
-                    </g>
-                    <g transform="matrix(0.56,0,0,0.56,0,0)">
-                        <path d="M32.484,8.056L54.851,-24.523C55.197,-24.962 55.35,-24.959 55.754,-24.954C56.465,-24.851 56.905,-24.073 56.5,-23.391L34.049,9.31C33.56,8.855 33.036,8.436 32.484,8.056Z" style="fill:rgb(191,191,191);"/>
-                    </g>
-                    <g transform="matrix(0.56,0,0,0.56,0,0)">
-                        <path d="M16.301,8.648L1.94,-14.68C1.576,-15.357 2.038,-16.226 2.88,-16.2C3.367,-16.129 3.383,-16.101 3.644,-15.728L17.953,7.516C17.374,7.853 16.822,8.232 16.301,8.648Z" style="fill:rgb(191,191,191);"/>
-                    </g>
-                    <g transform="matrix(0.56,0,0,0.56,0,0)">
-                        <path d="M11.399,16.846L-13.579,7.606C-14.488,7.206 -14.338,5.611 -13.119,5.674C-13.001,5.695 -13.001,5.695 -12.885,5.73L11.903,14.9C11.689,15.529 11.52,16.179 11.399,16.846Z" style="fill:rgb(191,191,191);"/>
-                    </g>
+                <g id="dark1" serif:id="dark" transform="matrix(0.666667,0,0,0.666667,0,0)">
+                    <circle cx="21" cy="9.424" r="11.576" style="fill:rgb(97,97,97);"/>
                 </g>
-                <g transform="matrix(0.56,-0,-0,0.56,0,0)">
-                    <use xlink:href="#_Image2" x="29.659" y="12.062" width="8.223px" height="6.94px" transform="matrix(0.913678,0,0,0.991402,0,0)"/>
+                <g transform="matrix(0.666667,0,0,0.666667,0.760604,0)">
+                    <path d="M26.043,18.622C26.043,18.622 22.135,19.877 20.124,19.877C18.113,19.877 13.974,18.622 13.974,18.622C13.974,18.622 15.59,29.907 16.303,30.682C17.042,31.486 22.721,31.427 23.398,30.682C24.136,29.867 26.043,18.622 26.043,18.622Z" style="fill:rgb(58,58,58);"/>
                 </g>
+            </g>
+            <g id="dark2" serif:id="dark">
+                <g transform="matrix(0.56,0,0,0.56,-32.8705,4.9738e-16)">
+                    <path d="M61.617,11.577L70.601,14.9C70.386,15.529 70.217,16.179 70.096,16.846L60.65,13.351C60.949,12.746 61.272,12.154 61.617,11.577Z" style="fill:rgb(154,154,154);"/>
+                </g>
+                <g transform="matrix(0.56,0,0,0.56,-32.8705,4.9738e-16)">
+                    <path d="M72.88,1.392L76.65,7.516C76.071,7.853 75.519,8.232 74.999,8.648L71.098,2.312C71.678,1.983 72.273,1.676 72.88,1.392Z" style="fill:rgb(154,154,154);"/>
+                </g>
+                <g transform="matrix(0.56,0,0,0.56,-32.8705,4.9738e-16)">
+                    <path d="M95.487,1.784C96.085,2.089 96.669,2.417 97.239,2.766L92.746,9.31C92.257,8.855 91.734,8.436 91.181,8.056L95.487,1.784Z" style="fill:rgb(154,154,154);"/>
+                </g>
+                <g transform="matrix(0.56,0,0,0.56,-32.8705,4.9738e-16)">
+                    <path d="M106.266,12.124C106.597,12.71 106.905,13.31 107.19,13.923L96.965,17.366C96.87,16.693 96.726,16.037 96.536,15.4L106.266,12.124Z" style="fill:rgb(154,154,154);"/>
+                </g>
+            </g>
+            <g transform="matrix(0.56,-0,-0,0.56,-0.390469,4.9738e-16)">
+                <use xlink:href="#_Image1" x="30.423" y="12.062" width="8.223px" height="6.94px" transform="matrix(0.913678,0,0,0.991402,0,0)"/>
             </g>
         </g>
     </g>
     <defs>
-        <image id="_Image2" width="9px" height="7px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAYAAADam2dgAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAiElEQVQYlW3PsWqCURiD4eerB1oLDtJCEVocutT7vw0Hb0ChQzu4VYSi/hqX42a2EHiTVJIxppjhBcEPfrGvqqHhEW/4wmf3G6ywSbJrOGDbw8IcH7jgjHUleUDDrfa9E1/xjWWrqkuSEwb84w87LPCESYOqSh98THLuhKEfOZQ7SjLq9c84XQFo3zAUSxc+fwAAAABJRU5ErkJggg=="/>
+        <image id="_Image1" width="9px" height="7px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAHCAYAAADam2dgAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAiElEQVQYlW3PsWqCURiD4eerB1oLDtJCEVocutT7vw0Hb0ChQzu4VYSi/hqX42a2EHiTVJIxppjhBcEPfrGvqqHhEW/4wmf3G6ywSbJrOGDbw8IcH7jgjHUleUDDrfa9E1/xjWWrqkuSEwb84w87LPCESYOqSh98THLuhKEfOZQ7SjLq9c84XQFo3zAUSxc+fwAAAABJRU5ErkJggg=="/>
     </defs>
 </svg>

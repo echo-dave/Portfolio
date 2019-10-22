@@ -14,11 +14,12 @@ body section > div > div {
 
 
 .imgBreak {
-    background: url(../img/Clouds-over-Farm.jpg) no-repeat center;
-    min-height:200px;
+    background: url(../img/Clouds-over-Farm.jpg) no-repeat;
+    height:200px;
     margin-bottom: 1.5em;
-    background-size: cover;
-    background-position-y: -147px;
+    background-size: 800px auto;
+    background-position-y: -215px;
+    background-position-x: center;
 }
 
 

@@ -12,9 +12,15 @@ body section > div > div {
 }
 
 .imgBreak {
-    background: url(../img/bicycle.jpg) no-repeat center;
-    min-height:200px;
+    background: url(../img/bicycle.jpg) no-repeat;
+    height:200px;
     margin-bottom: 1.5em;
-    background-size: cover;
-    background-position-y: -242;
+    background-size: 800px auto;
+    background-position-y: -329px;
+    background-position-x: center;
+
+}
+
+@media only screen and (max-width:650px) {
+    .imgBreak {background-position-x: -147px;}
 }

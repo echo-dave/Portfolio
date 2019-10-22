@@ -3,7 +3,7 @@ $(document).ready(function () {
     $("div.about").css("min-height", $(".portrait").css("height"));
 
     //set .imgBreak hight as a percentage of width. file 19% of width
-    $(".imgBreak").css("height", parseInt($(".imgBreak").css("width").substring(0, $(".imgBreak").css("width").length - 2) * .19 + "px"));
+    // $(".imgBreak").css("height", parseInt($(".imgBreak").css("width").substring(0, $(".imgBreak").css("width").length - 2) * .26 + "px"));
 
     //listen for loader animation to end and set position absolute
     $(".animatedLoader").on("animationend webkitAnimationEnd oAnimationEnd", function (event) {

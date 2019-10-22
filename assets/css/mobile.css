@@ -2,7 +2,7 @@
 
     section, .imgBreak, .animatedLoader {
         width:95vw;
-    }
+    
 
 
 } .project {
@@ -26,3 +26,4 @@
 li.project:nth-child(odd), li.project  {
     margin: 0 auto 1.5em;
     } 
+}

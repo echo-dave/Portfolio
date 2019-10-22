@@ -28,7 +28,7 @@ $(document).ready(function () {
             // $("#styleChange").html('<h6><a href="#" title="Return to the dark">go dark</a><h6>');
             $("#styleChange").html('<img alt="go light" src="assets/img/dark.svg" height="21px" width="21px" />');
             $("#styleChange").on("click", function () {
-                $("#style").prop("href", "assets/css/style.css");
+                $("#style").prop("href", "assets/css/dark.css");
                 setLightBtn();
             });
         

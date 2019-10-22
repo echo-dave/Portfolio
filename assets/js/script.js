@@ -6,8 +6,8 @@ $(document).ready(function () {
     // $(".imgBreak").css("height", parseInt($(".imgBreak").css("width").substring(0, $(".imgBreak").css("width").length - 2) * .26 + "px"));
 
     //set links to _blank noopener
-    $("a").attr("target","_blank");
-    $("a").attr("rel","noopener")
+    $(".newWindow").attr("target","_blank");
+    $(".newWindow").attr("rel","noopener")
 
     //listen for loader animation to end and set position absolute
     $(".animatedLoader").on("animationend webkitAnimationEnd oAnimationEnd", function (event) {
@@ -46,7 +46,7 @@ $(document).ready(function () {
 
 
 
-    let aL;
+    let aL; //animated loader
     let aniLo;
     let marginWidth;
     let strLength; //for concatonating

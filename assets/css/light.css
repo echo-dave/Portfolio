@@ -12,9 +12,9 @@ body section > div > div {
 }
 
 .imgBreak {
-    background: url(../img/Clouds-over-Farm.jpg) no-repeat center;
+    background: url(../img/bicycle.jpg) no-repeat center;
     min-height:200px;
     margin-bottom: 1.5em;
     background-size: cover;
-    background-position-y: -147px;
+    background-position-y: -242;
 }

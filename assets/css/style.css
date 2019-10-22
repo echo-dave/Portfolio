@@ -69,7 +69,7 @@ section, .imgBreak{width:80vw; margin:0 auto;max-width: 54em}
  }
 
  .project {
-    width: 40%;
+     width: 40%;
      overflow: hidden;
      /* background: rgba(0, 0, 0,.2); */
      background: rgba(0, 21, 40, .92);

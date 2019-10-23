@@ -9,36 +9,30 @@ let rps = ["Rock Paper Scisors", "This was a bit of a logic problem in terms all
 //mouse cursor funtion
 
 function mouseOver(event){
-    let left = event.clientX + 10 +  "px";
+    let left = event.pageX + 15 +  "px";
     let heightPopup = $('#popup').css("height").length - 2;
     heightPopup = $('#popup').css("height").substring(0,heightPopup);
     console.log(heightPopup);
-    let top = parseInt(event.clientY) - parseInt(heightPopup) + "px";
+    let top = parseInt(event.pageY) - parseInt(heightPopup) -60 + "px";
     console.log(`top ${top} left ${left}`)
     $('#popup').css({top:top,left:left});
 }
 
 //output to screen
-$("#hangman").hover(function() {
-    $(`<div id="popup">`).appendTo('body');
-      $('#popup').html(`<h1>${hangman[0]}</h1><p>${hangman[1]}</p>`)
-    mouseOver(event);
-    console.log("hover");
-},function(){
-    $('#popup').remove();
-    console.log("leave hover");
-});
+// $("#hangman").hover(mousein(hangman),function(){
+//     $('#popup').remove();
+//     console.log("leave hover");
+// });
 
 
-$("#rps").hover(function() {
-    $(`<div id="popup">`).appendTo('body');
-      $('#popup').html(`<h1>${rps[0]}</h1><p>${rps[1]}</p>`)
-    mouseOver(event);
-    console.log("hover");
-},function(){
-    $('#popup').remove();
-    console.log("leave hover");
-});
+
+
+
+
+// $("#rps").hover( mousein(rps), function(){
+//     $('#popup').remove();
+//     console.log("leave hover");
+// });
 
 
 
@@ -46,10 +40,12 @@ $("#rps").hover(function() {
 
 //attempt to abstract functions
 function mousein(project) {
-    $(`<div id="popup">`).appendTo('body');
-      $('#popup').html(`<h1>${project[0]}</h1><p>${project[1]}</p>`)
-    mouseOver(event);
-    console.log("hover");
+    return function () {
+        $(`<div id="popup">`).appendTo('body');
+        $('#popup').html(`<h1>${project[0]}</h1><p>${project[1]}</p>`)
+        mouseOver(event);
+        console.log("hover");
+    }
 }
 function mouseout(){
     $('#popup').remove();
@@ -58,7 +54,22 @@ function mouseout(){
 
 
 
-//$("#rps").hover(mousein(rps)),mouseout();
+//$("#rps").hover(mousein(rps),mouseout());
+
+//$("#hangman").hover(mousein(hangman),mouseout());
+
+function mouseactive(project) {
+    return function () {
+    $(`<div id="popup">`).appendTo('body');
+    $('#popup').html(`<h1>${project[0]}</h1><p>${project[1]}</p>`)
+    mouseOver(event);
+}
+}
+
+
+
+$('#hangman').mousemove(mouseactive(rps));
+$('#rps').mousemove(mouseactive(rps));
 
 
 

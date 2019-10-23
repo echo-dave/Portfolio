@@ -66,9 +66,11 @@ function mouseactive(project) {
 }
 }
 
+//clear popups
+$('.project').mouseout(mouseout);
 
-
-$('#hangman').mousemove(mouseactive(rps));
+//project popups
+$('#hangman').mousemove(mouseactive(hangman));
 $('#rps').mousemove(mouseactive(rps));
 
 

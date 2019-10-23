@@ -116,7 +116,7 @@ section, .imgBreak{width:80vw; margin:0 auto;max-width: 54em}
   
  }
 
- #popup {
+ .popup {
      width:20em;
      background: rgba(128, 128, 128, 0.95);
      padding:2em;

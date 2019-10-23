@@ -10,12 +10,12 @@ let rps = ["Rock Paper Scisors", "This was a bit of a logic problem in terms all
 
 function mouseOver(event){
     let left = event.pageX + 15 +  "px";
-    let heightPopup = $('#popup').css("height").length - 2;
-    heightPopup = $('#popup').css("height").substring(0,heightPopup);
+    let heightPopup = $('.popup').css("height").length - 2;
+    heightPopup = $('.popup').css("height").substring(0,heightPopup);
     console.log(heightPopup);
     let top = parseInt(event.pageY) - parseInt(heightPopup) -60 + "px";
     console.log(`top ${top} left ${left}`)
-    $('#popup').css({top:top,left:left});
+    $('.popup').css({top:top,left:left});
 }
 
 //output to screen
@@ -41,14 +41,14 @@ function mouseOver(event){
 //attempt to abstract functions
 function mousein(project) {
     return function () {
-        $(`<div id="popup">`).appendTo('body');
-        $('#popup').html(`<h1>${project[0]}</h1><p>${project[1]}</p>`)
+        $(`<div class="popup">`).appendTo('body');
+        $('.popup').html(`<h1>${project[0]}</h1><p>${project[1]}</p>`)
         mouseOver(event);
         console.log("hover");
     }
 }
 function mouseout(){
-    $('#popup').remove();
+    $('.popup').remove();
     console.log("leave hover");
 };
 
@@ -60,8 +60,8 @@ function mouseout(){
 
 function mouseactive(project) {
     return function () {
-    $(`<div id="popup">`).appendTo('body');
-    $('#popup').html(`<h1>${project[0]}</h1><p>${project[1]}</p>`)
+    $(`<div class="popup">`).appendTo('body');
+    $('.popup').html(`<h1>${project[0]}</h1><p>${project[1]}</p>`)
     mouseOver(event);
 }
 }

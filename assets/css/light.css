@@ -21,6 +21,10 @@ body section > div > div {
 
 }
 
+/* li.project:hover {
+    border:orange solid .225em;
+} */
+
 @media only screen and (max-width:650px) {
     .imgBreak {background-position-x: -147px;}
 }

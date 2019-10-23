@@ -17,6 +17,10 @@ body section > div > div, .imgBreak{
     border-radius: 1em;
 }
 
+section {
+    line-height: 1.2;
+}
+
 .wrapper{
     margin: 0 auto;
     padding:0 0em;
@@ -69,7 +73,7 @@ section, .imgBreak{width:80vw; margin:0 auto;max-width: 54em}
  }
 
  .project {
-     width: 40%;
+     width: 45.5%;
      overflow: hidden;
      /* background: rgba(0, 0, 0,.2); */
      background: rgba(0, 21, 40, .92);
@@ -77,8 +81,9 @@ section, .imgBreak{width:80vw; margin:0 auto;max-width: 54em}
      border-radius: .5em;
      list-style: none;
      float: left;
-     height:15rem;
+     height:17.5rem;
      position: relative;
+     box-sizing: border-box;
      
 
  }
@@ -95,13 +100,32 @@ section, .imgBreak{width:80vw; margin:0 auto;max-width: 54em}
      color:orange;
      height:1.9em;
  }
+ .project a {
+     text-decoration: none;
+ }
 
+/*  li.project:hover {
+     border:rgb(92, 92, 92) solid .125em;
+ }
+ */
  .project .thumbs {
      width: 100%;
      height:12.5em;
      background-size:cover;
-     border-radius: 0 0 .5em .25em;
+     border-radius: 0 0 .25em .25em;
   
  }
 
+ #popup {
+     width:20em;
+     background: rgba(128, 128, 128, 0.95);
+     padding:2em;
+     position: fixed;
+     top: 4em;
+     margin:auto;
+     left:25%;
+     border-radius: .5em;
+     font-weight: 300;
+     line-height:1.4;
+ }
  

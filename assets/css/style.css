@@ -53,6 +53,13 @@ section, .imgBreak{width:80vw; margin:0 auto;max-width: 54em}
     bottom: -1em;
     right: 0em;
 }
+.gitlink {
+    position: absolute;
+    bottom:-1;
+    right:2.5;
+    display: none;
+
+}
 
 /* #styleChange a:visited, #styleChange a:active, #styleChange a {
     color:#cacaca;

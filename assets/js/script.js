@@ -38,6 +38,13 @@ $(document).ready(function () {
         
         }
         setLightBtn();
+        //github link
+        $('.gitlink').css({
+            "display":"block",
+            "position":"absolute",
+            "bottom":"-1em",
+            "right":"2.5em"})
+
 
     }
         

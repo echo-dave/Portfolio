@@ -50,13 +50,13 @@ section, .imgBreak{width:80vw; margin:0 auto;max-width: 54em}
 
 #styleChange {
     position: absolute;
-    bottom: -1em;
-    right: 0em;
+    bottom: -2em;
+    right: -.5em;
 }
 .gitlink {
     position: absolute;
-    bottom:-1;
-    right:2.5;
+    bottom:-2;
+    right:2;
     display: none;
 
 }

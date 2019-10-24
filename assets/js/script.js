@@ -42,8 +42,8 @@ $(document).ready(function () {
         $('.gitlink').css({
             "display":"block",
             "position":"absolute",
-            "bottom":"-1em",
-            "right":"2.5em"})
+            "bottom":"-2em",
+            "right":"2em"})
 
 
     }

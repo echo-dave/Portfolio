@@ -1,15 +1,13 @@
-# Basic template for web development
+# Portfolio
 
-## Indludes basic linked files
-* jquery
-* css reset
-* empty styles.css
-* basic typography.css
-* empty script.js
+## What's it built with?
+* HTML
+* CSS styling and animations
+* JQuery layout adjustmet of animations for mobile and on project hover information  
 
+This has been a growing project as I've found time to work on tweaking the style and adding little detail functions to it. More I opted not to work with bootstrap or another framework to keep things flexible and avoid fighting with other people's defaults - they aren't inherently bad by any means, but as a portfolio piece in and of itself I'm keeping it all pretty pretty basic. 
 
-Currently loaded default font is [Source Sans Pro from Google Fonts](https://fonts.google.com/specimen/Source+Sans+Pro) Another option would be something like [Montserrat - notably light 300](https://fonts.google.com/specimen/Montserrat)
+## Why the single page?
+In the current landscape I'm not sure it makes sense to have a multipage site to show off what I can do. I don't need extra pages for categorizing things at the moment and projects are going to link out to github or other places anyway.  
 
-For a nice readable serif font [Roboto Slab could be considered](https://fonts.google.com/specimen/Roboto+Slab) Another strong serif option is [IBM Plex](https://fonts.google.com/specimen/IBM+Plex+Serif)
-
-Index.html also includes javascript section in body
+[See the deployment](https://echo-dave.github.io/Portfolio)

@@ -48,18 +48,32 @@ section, .imgBreak{width:80vw; margin:0 auto;max-width: 54em}
     float:left;
 }
 
-
-#styleChange {
+#headMenu {
+    display:block;
     position: absolute;
-    bottom: -2em;
-    right: -.5em;
+    bottom:-2rem;
+    right: -2rem;
+    display:none;
 }
+#headMenu > li {
+    float:right;
+    margin-left:1.2rem;
+}
+
+.mail {
+
+}
+#styleChange {
+   /*  position: absolute;
+    bottom: -2em;
+    right: -.5em; */
+}
+
 .gitlink {
-    position: absolute;
+/*     position: absolute;
     bottom:-2;
     right:2;
-    display: none;
-
+    display: none; */
 }
 
 /* #styleChange a:visited, #styleChange a:active, #styleChange a {

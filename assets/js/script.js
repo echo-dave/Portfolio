@@ -21,7 +21,7 @@ $(document).ready(function () {
         if (currentSheet.indexOf("style.css") >= 0) { */
         function setLightBtn() {
             // $("#styleChange").html('<h6><a href="#" title="Have a go at the light theme">go light</a><h6>');
-            $("#styleChange").html('<img alt="go light" src="assets/img/light.svg" height="21px" width="21px" />');
+            $("#styleChange").html('<img alt="go light" src="assets/img/light.svg" height="16px" width="25x" />');
             $("#styleChange").on("click", function () {
             $("#style").prop("href", "assets/css/light.css");
                 setDarkBtn();
@@ -30,7 +30,7 @@ $(document).ready(function () {
         }
         function setDarkBtn(){
             // $("#styleChange").html('<h6><a href="#" title="Return to the dark">go dark</a><h6>');
-            $("#styleChange").html('<img alt="go light" src="assets/img/dark.svg" height="21px" width="21px" />');
+            $("#styleChange").html('<img alt="go light" src="assets/img/dark.svg" height="16px" width="25px" />');
             $("#styleChange").on("click", function () {
                 $("#style").prop("href", "assets/css/dark.css");
                 setLightBtn();
@@ -38,12 +38,15 @@ $(document).ready(function () {
         
         }
         setLightBtn();
+
+
         //github link
-        $('.gitlink').css({
+       //  $('.gitlink').css({
+        $("#headMenu").css({
             "display":"block",
             "position":"absolute",
             "bottom":"-2em",
-            "right":"2em"})
+            "right":"-2em"}) 
 
 
     }

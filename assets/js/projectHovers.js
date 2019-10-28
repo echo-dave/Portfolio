@@ -34,10 +34,15 @@ function mouseOver(event){
     if (cY - parseInt(heightPopup) < 40 ) {
         top = parseInt(event.clientY) +30 + "px";
     }
-
+    if (($(window).width()) - 320 - event.clientX < 0){
+        left = event.clientX -15 -320 + "px";
+        }
+    
     $('.popup').css({top:top,left:left});
-
-    console.log(`top ${cY} left ${cX}`)
+   
+  
+   
+   console.log(`top ${cY} left ${cX}`)
     console.log(cX + " , " + cY);
 }
 

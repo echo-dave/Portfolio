@@ -150,5 +150,6 @@ section, .imgBreak{width:80vw; margin:0 auto;max-width: 54em}
      border-radius: .5em;
      font-weight: 300;
      line-height:1.4;
+     pointer-events: none;
  }
  

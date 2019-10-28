@@ -42,6 +42,8 @@ $(document).ready(function () {
 
         //github link
        //  $('.gitlink').css({
+
+       //changing nav menu from display none to visible after animation and re-applying css
         $("#headMenu").css({
             "display":"block",
             "position":"absolute",

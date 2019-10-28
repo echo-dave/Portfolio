@@ -8,7 +8,8 @@ let starwars = ["StarWars RPG", "This little RPG was fun to put together even fo
 
 //mouse cursor funtion
 
-function mouseOver(event){
+//event.page 
+/* function mouseOver(event){
     let left = event.pageX + 15 +  "px";
     let heightPopup = $('.popup').css("height").length - 2;
     heightPopup = $('.popup').css("height").substring(0,heightPopup);
@@ -16,7 +17,32 @@ function mouseOver(event){
     let top = parseInt(event.pageY) - parseInt(heightPopup) -60 + "px";
     console.log(`top ${top} left ${left}`)
     $('.popup').css({top:top,left:left});
+    console.log(`computed ${left}, ${top}`);
+    console.log(`raw ${event.pageX}, ${event.pageY}`)
+
+} */
+
+//event.client
+function mouseOver(event){
+    let cX = event.clientX;
+    let cY = event.clientY;
+    let left = event.clientX + 15 +  "px";
+    let heightPopup = $('.popup').css("height").length - 2;
+    heightPopup = $('.popup').css("height").substring(0,heightPopup);
+    console.log(heightPopup);
+    let top = parseInt(event.clientY) - parseInt(heightPopup) -60 + "px";
+    if (cY - parseInt(heightPopup) < 40 ) {
+        top = parseInt(event.clientY) +30 + "px";
+    }
+
+    $('.popup').css({top:top,left:left});
+
+    console.log(`top ${cY} left ${cX}`)
+    console.log(cX + " , " + cY);
 }
+
+
+
 
 //output to screen
 // $("#hangman").hover(mousein(hangman),function(){

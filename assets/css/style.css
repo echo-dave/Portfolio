@@ -143,7 +143,7 @@ section, .imgBreak{width:80vw; margin:0 auto;max-width: 54em}
      width:20em;
      background: rgba(128, 128, 128, 0.95);
      padding:2em;
-     position: absolute;
+     position: fixed;
      top: 4em;
      margin:auto;
      left:25%;

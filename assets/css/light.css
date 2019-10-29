@@ -3,9 +3,11 @@ body {background: rgb(245, 244, 244);color:rgb(39, 39, 39);}
 
 body section > div > div {
     background: rgb(221, 221, 221);
-    color:rgb(39, 39, 39);
+    color:#272727;
     /* width:80vw; */
 }
+
+
 
 #styleChange a:visited, #styleChange a:active, #styleChange a {
     color:#cacaca;
@@ -20,6 +22,7 @@ body section > div > div {
     background-position-x: center;
 
 }
+
 
 /* li.project:hover {
     border:orange solid .225em;

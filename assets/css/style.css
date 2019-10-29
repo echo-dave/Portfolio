@@ -140,16 +140,22 @@ section, .imgBreak{width:80vw; margin:0 auto;max-width: 54em}
  }
 
  .popup {
+    background: rgba(235, 235, 235, 0.85);
      width:20em;
-     background: rgba(128, 128, 128, 0.95);
      padding:2em;
      position: fixed;
-     top: 4em;
+     /* top: 4em; */
      margin:auto;
-     left:25%;
+     /* left:25%; */
      border-radius: .5em;
      font-weight: 300;
      line-height:1.4;
-     pointer-events: none;
+     /* pointer-events: none; */
+     min-height: 4em;
+     z-index: 100;
  }
- 
+
+/*  .project:hover .popup{
+     display:block;
+ }
+  */

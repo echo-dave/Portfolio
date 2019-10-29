@@ -6,6 +6,9 @@ body section > div > div {
     color:#fff;
 
 }
+.popup {
+background: rgba(127, 127, 127, 0.85);
+}
 
 #styleChange a:visited, #styleChange a:active, #styleChange a {
     color:#cacaca;

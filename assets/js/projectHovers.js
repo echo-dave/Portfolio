@@ -7,6 +7,9 @@ let rps = ["Rock Paper Scissors", "This was a bit of a logic problem in terms al
 let starwars = ["StarWars RPG", "This little RPG was fun to put together even for something pretty basic. While not the most challenging of projects, it did give ideas of differnt things to utilize in the future: moving elements without the need for animating or removal and re-adding."]
 
 let trivia = ["Trivial Trivia","A basic trivia game concept working with javascripts timer functions and a single object to build questions, answer choices, and an answer index to compare with. A deceptive number of timers and clear timers were needed with moves between functions to dodge and correct bugs."]
+
+let loco = ["LoCo Search", " LoCo is a mobile first search for music and events with historical weather data for a sense of forecasting months out. Built with javascript utilising event and weather APIs for data and Bulma css framework to aid responsiveness. Links to venue locations and Youtube searches for planning and discovery."]
+
 //mouse cursor funtion
 
 //event.page 
@@ -106,9 +109,9 @@ $('#hangman').mousemove(mouseactive(hangman));
 $('#rps').mousemove(mouseactive(rps));
 $('#starwars').mousemove(mouseactive(starwars));
 $('#trivia').mousemove(mouseactive(trivia));
+$('#loco').mousemove(mouseactive(loco));
 
-
-
+loco
 
 
 });

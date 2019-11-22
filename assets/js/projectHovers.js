@@ -10,6 +10,8 @@ let trivia = ["Trivial Trivia","A basic trivia game concept working with javascr
 
 let loco = ["LoCo Search", " LoCo is a mobile first search for music and events with historical weather data for a sense of forecasting months out. Built with javascript utilising event and weather APIs for data and Bulma css framework to aid responsiveness. Links to venue locations and Youtube searches for planning and discovery."]
 
+let friendfind = ["Friend Finder","Friend Finder is a nodejs application utilizing mysql database persistant storage of potential friends. A short survey allows us to quickyly compare your answers to others and pick the base match."]
+
 //mouse cursor funtion
 
 //event.page 
@@ -110,8 +112,9 @@ $('#rps').mousemove(mouseactive(rps));
 $('#starwars').mousemove(mouseactive(starwars));
 $('#trivia').mousemove(mouseactive(trivia));
 $('#loco').mousemove(mouseactive(loco));
+$('#friendfind').mousemove(mouseactive(friendfind));
 
-loco
+
 
 
 });

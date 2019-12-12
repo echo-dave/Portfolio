@@ -113,6 +113,10 @@ $(document).ready(function() {
     return function() {
       $(`<div class="popup">`).appendTo("body");
       $(".popup").html(`<h1>${project[0]}</h1><p>${project[1]}</p>`);
+
+      $("a").on("click", function(e) {
+        $(".popup").remove();
+      });
       mouseOver(event);
     };
   }
@@ -129,8 +133,4 @@ $(document).ready(function() {
   $("#friendfind").mousemove(mouseactive(friendfind));
   $("#bamazon").mousemove(mouseactive(bamazon));
   $("#rtm").mousemove(mouseactive(rtm));
-
-  $("a").on("click", function(e) {
-    $(".popup").remove();
-  });
 });

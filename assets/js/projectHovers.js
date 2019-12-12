@@ -130,7 +130,7 @@ $(document).ready(function() {
   $("#bamazon").mousemove(mouseactive(bamazon));
   $("#rtm").mousemove(mouseactive(rtm));
 
-  $(".project").on("tap", function(e) {
+  $("a").on("tap", function(e) {
     $(".popup").remove();
   });
 });

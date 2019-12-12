@@ -130,7 +130,7 @@ $(document).ready(function() {
   $("#bamazon").mousemove(mouseactive(bamazon));
   $("#rtm").mousemove(mouseactive(rtm));
 
-  $("ul.portfolio").on("click", function(e) {
-    $(this).off("mouseOver", $(this));
+  $(".project").on("tap", function(e) {
+    $(this).off("mouseover");
   });
 });

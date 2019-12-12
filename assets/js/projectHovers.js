@@ -131,6 +131,6 @@ $(document).ready(function() {
   $("#rtm").mousemove(mouseactive(rtm));
 
   $(".project").on("tap", function(e) {
-    $(this).off("mouseover");
+    $(".popup").remove();
   });
 });

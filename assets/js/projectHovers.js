@@ -129,4 +129,8 @@ $(document).ready(function() {
   $("#friendfind").mousemove(mouseactive(friendfind));
   $("#bamazon").mousemove(mouseactive(bamazon));
   $("#rtm").mousemove(mouseactive(rtm));
+
+  $("ul.portfolio").on("click", function(e) {
+    $(this).off("mouseMove", $(this));
+  });
 });

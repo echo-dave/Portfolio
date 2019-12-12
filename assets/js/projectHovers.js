@@ -131,6 +131,6 @@ $(document).ready(function() {
   $("#rtm").mousemove(mouseactive(rtm));
 
   $("ul.portfolio").on("click", function(e) {
-    $(this).off("mouseMove", $(this));
+    $(this).off("mouseOver", $(this));
   });
 });

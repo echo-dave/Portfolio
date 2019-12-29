@@ -1,29 +1,28 @@
 /* body {background:url("../img/bgpatternlighter.png")repeat;} */
-body {background: rgb(15, 15, 15);color:#fff}
+body {
+  background: rgb(15, 15, 15);
+  color: #fff;
+}
 
 body section > div > div {
-    background: rgb(48, 48, 48);
-    color:#fff;
-
+  background: rgb(48, 48, 48);
+  color: #fff;
 }
 .popup {
-background: rgba(127, 127, 127, 0.85);
+  background: rgba(127, 127, 127, 0.95);
 }
 
-#styleChange a:visited, #styleChange a:active, #styleChange a {
-    color:#cacaca;
+#styleChange a:visited,
+#styleChange a:active,
+#styleChange a {
+  color: #cacaca;
 }
-
-
 
 .imgBreak {
-    background: url(../img/Clouds-over-Farm.jpg) no-repeat;
-    height:200px;
-    margin-bottom: 1.5em;
-    background-size: 800px auto;
-    background-position-y: -215px;
-    background-position-x: center;
+  background: url(../img/Clouds-over-Farm.jpg) no-repeat;
+  height: 200px;
+  margin-bottom: 1.5em;
+  background-size: 800px auto;
+  background-position-y: -215px;
+  background-position-x: center;
 }
-
-
- 

@@ -1,33 +1,42 @@
 /* body {background:url("../img/bgpatternlighter.png")repeat;} */
-body {background: rgb(245, 244, 244);color:rgb(39, 39, 39);}
-
-body section > div > div {
-    background: rgb(221, 221, 221);
-    color:#272727;
-    /* width:80vw; */
+body {
+  background: rgb(245, 244, 244);
+  color: rgb(39, 39, 39);
 }
 
+body section > div > div {
+  background: rgb(221, 221, 221);
+  color: #272727;
+  /* width:80vw; */
+}
 
-
-#styleChange a:visited, #styleChange a:active, #styleChange a {
-    color:#cacaca;
+#styleChange a:visited,
+#styleChange a:active,
+#styleChange a {
+  color: #cacaca;
 }
 
 .imgBreak {
-    background: url(../img/bicycle.jpg) no-repeat;
-    height:200px;
-    margin-bottom: 1.5em;
-    background-size: 800px auto;
-    background-position-y: -329px;
-    background-position-x: center;
-
+  background: url(../img/bicycle.jpg) no-repeat;
+  height: 200px;
+  margin-bottom: 1.5em;
+  background-size: 800px auto;
+  background-position-y: -329px;
+  background-position-x: center;
 }
 
+.repos {
+  background-color: #fff;
+  border: solid black;
+  border-width: 1px 1px 0 1px;
+}
 
 /* li.project:hover {
     border:orange solid .225em;
 } */
 
-@media only screen and (max-width:650px) {
-    .imgBreak {background-position-x: -147px;}
+@media only screen and (max-width: 650px) {
+  .imgBreak {
+    background-position-x: -147px;
+  }
 }

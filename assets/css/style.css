@@ -109,7 +109,8 @@ section,
   border-radius: 0.5em;
   list-style: none;
   float: left;
-  height: 17.5rem;
+  /* height: 17.5rem; */
+  height: 21.5rem;
   position: relative;
   box-sizing: border-box;
   margin-bottom: 1.3rem;
@@ -162,7 +163,21 @@ li.project:nth-child(odd) {
   -webkit-backdrop-filter: blur(4px);
 }
 
-/*  .project:hover .popup{
-     display:block;
- }
-  */
+.repos {
+  background: black;
+  /* color: white; */
+  border-radius: 0.25rem 0.25rem 0 0;
+  border: orange solid;
+  border-width: 1px 1px 0 1px;
+  padding: 0.85rem 0.75rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  color: #5abef8;
+}
+
+.repos svg {
+  padding-right: 0.5rem;
+  position: relative;
+  top: 0.15rem;
+  fill: currentColor;
+}

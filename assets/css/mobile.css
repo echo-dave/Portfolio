@@ -1,41 +1,41 @@
-@media only screen and (max-width:850px) {
-    .project {
-        max-width: 44.5%;
-    }  
-    li.project:nth-child(even) {
-        float:right;
-    }
-} 
+@media only screen and (max-width: 850px) {
+  .project {
+    max-width: 44.5%;
+  }
+  li.project:nth-child(even) {
+    float: right;
+  }
+}
 
-    @media only screen and (max-width:650px) {
-   
-    .project {
-        width: 86%;
-         overflow: hidden;
-         background: rgba(0, 21, 40, .92);
-         padding:1.5em;
-         border-radius: .5em;
-         list-style: none;
-         float: none;
-         height:17.5rem;
-         position: relative;
-         max-width: 25em;
-         }
+@media only screen and (max-width: 650px) {
+  .project {
+    width: 86%;
+    float: none;
+    max-width: 25em;
+    /* 
+    overflow: hidden;
+    padding: 1.5em;
+    border-radius: 0.5em;
+    list-style: none;
+    position: relative; */
+  }
 
-    li.project:nth-child(odd), li.project  {
-        margin: 0 auto 1.5em;
-        } 
-    }
-    li.project:nth-child(even) {
-        float:none;
-    }
+  li.project:nth-child(odd),
+  li.project {
+    margin: 0 auto 1.5em;
+  }
+}
+li.project:nth-child(even) {
+  float: none;
+}
 
-    .project .thumbs {
-    
-    }
+.project .thumbs {
+}
 
-@media only screen and (max-width:550px) {
-    section, .imgBreak, .animatedLoader {
-        width:95vw;  
-    }
+@media only screen and (max-width: 550px) {
+  section,
+  .imgBreak,
+  .animatedLoader {
+    width: 95vw;
+  }
 }

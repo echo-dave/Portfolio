@@ -143,6 +143,8 @@ li.project:nth-child(odd) {
   border-radius: 0 0 0.25em 0.25em;
   background-position-y: top;
   background-position-x: center;
+  position: relative;
+  top:4rem;
 }
 
 .popup {
@@ -183,4 +185,9 @@ li.project:nth-child(odd) {
   fill: currentColor;
   height: 20px;
   width: 20px;
+}
+
+.repoLink {
+  position: absolute;
+  top: 5.35rem;
 }

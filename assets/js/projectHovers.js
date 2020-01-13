@@ -34,7 +34,7 @@ $(document).ready(function() {
 
   let bamazon = [
     "Bamazon",
-    "Bamazon is a webstore front listing utilizing NodeJS and ExpressJS for webserver / routing and backend logic. Sequelize with MySQL handle the various database requests for displaying, updating, and creating products. JQuery is utilized for building and manipulating the frontend dynamically while Bulma sass is used to for styling."
+    "Bamazon is a webstore front listing utilizing NodeJS and ExpressJS for webserver / routing and backend logic. Sequelize with MySQL handles the various database requests for displaying, updating, and creating products. JQuery is utilized for building and manipulating the frontend dynamically while Bulma sass is used to for styling."
   ];
 
   let rtm = [

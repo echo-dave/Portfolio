@@ -23,13 +23,11 @@ $(document).ready(function() {
   let loco = [
     "LoCo Search",
     "LoCo is a mobile first search for music and events with historical weather data for a sense of forecasting beyond 7 days. Built with javascript / jQuery utilizing event and weather APIs for data and Bulma css framework for styling. Links to venue locations and Youtube searches for planning and discovery."
-
   ];
 
   let friendfind = [
     "Friend Finder",
     "Friend Finder is a NodeJS application utilizing MySQL database for persistent storage of potential friends. A short survey is used to quickly gather information to compare the user to those in the database and pick the best match. Survey takers are added to the database and included in future searches."
-
   ];
 
   let bamazon = [
@@ -40,7 +38,11 @@ $(document).ready(function() {
   let rtm = [
     "Ride the Mountain",
     "Ride the Mountain is a full stack Heroku deployment of a mountain bike trail review site. Utilizing MySQL, Cloudinary persistent storage of uploaded images, and Bulma sass framework all tied together by NodeJS and jQuery. As a design choice we opted not to use email as part of our authentication in order to keep the barrier to entry low for demonstration purposes. The authentication system utilizes bcrypt, express-sessions, http-only cookies, and local storage."
+  ];
 
+  let unknowd = [
+    "Unknowd",
+    "A community platform to help bring the community back into community. This project set out to solve a real world problem of a local art community - people felt left out because they didn’t know what was going on. As a result, one of the requirements became having viewer displays available for  visitors and those that don’t log into anything. Primary key components in building are React.js, WebSockets, MongoDB. All posts and updates are broadcasted and updated in realtime to users and  the viewer displays."
   ];
 
   //event.client
@@ -117,4 +119,5 @@ $(document).ready(function() {
   $("#friendfind").mousemove(mouseactive(friendfind));
   $("#bamazon").mousemove(mouseactive(bamazon));
   $("#rtm").mousemove(mouseactive(rtm));
+  $("#unknowd").mousemove(mouseactive(unknowd));
 });
